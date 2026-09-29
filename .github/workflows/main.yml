@@ -2,7 +2,7 @@ name: Run REST Assured test cases
 
 on:
   push:
-    branches: {"master"}
+    branches: {"main"}
 
 workflow_dispatch:
 
@@ -14,7 +14,7 @@ workflow_dispatch:
         - uses: actions/setup-java@v4
           with:
             java-version: "23.0.1"
-            distribution: temurin
+            distribution: "temurin"
             cache: maven
           -run: mvn clean test
 
