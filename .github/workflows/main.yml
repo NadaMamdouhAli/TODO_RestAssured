@@ -2,11 +2,9 @@ name: Run REST Assured test cases
 
 on:
   push:
-    branches: {"main"}
+    branches: ["main"]
 
-workflow_dispatch:
-
-  jobs:
+jobs:
     test:
       runs-on: windows-latest
       steps:
